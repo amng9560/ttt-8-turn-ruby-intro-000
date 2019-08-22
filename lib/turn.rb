@@ -45,31 +45,6 @@ def move(board, index, character = "X")
 end
 
 #Asks user for a number, check if it is valid, and if it's not, recursively continues to ask for a number
-def turn (board)
-  puts "Please enter 1-9:"
-  num = gets.chomp
-  index = input_to_index(num)
-  if valid_move?(board, index) == true
-    move(board, index)
-    display_board(board)
-  else
-    turn(board)
-  end
-end
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-
-
 def turn(board)
   puts "Please enter 1-9:"
 end
